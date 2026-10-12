@@ -1,0 +1,2115 @@
+[
+  {
+    "id": "clock_stop",
+    "action": "clock.set",
+    "phrases": [
+      "часы остановились",
+      "стрелки остановились",
+      "часы встали"
+    ],
+    "payload": {
+      "running": false,
+      "caption": "А часы-то остановились!"
+    },
+    "threshold": 0.84,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 10,
+    "require_final": false,
+    "tags": [
+      "сценарий"
+    ]
+  },
+  {
+    "id": "clock_run",
+    "action": "clock.set",
+    "phrases": [
+      "еще идут старинные часы",
+      "идут старинные часы"
+    ],
+    "payload": {
+      "running": true,
+      "caption": "А часы-то пошли!"
+    },
+    "threshold": 0.84,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 10,
+    "require_final": false,
+    "tags": [
+      "сценарий"
+    ]
+  },
+  {
+    "id": "auto_002",
+    "action": "stats.count",
+    "phrases": [
+      "старинные часы зазвучали на кухне"
+    ],
+    "payload": {
+      "name": "statistics-2"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_003",
+    "action": "caption.show",
+    "phrases": [
+      "лампа качнулись в спальне",
+      "часы пошли"
+    ],
+    "payload": {
+      "text": "Лампа качнулись в спальне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_004",
+    "action": "stats.count",
+    "phrases": [
+      "музыка замолчали в коридоре"
+    ],
+    "payload": {
+      "name": "statistics-4"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_005",
+    "action": "log.write",
+    "phrases": [
+      "дверь замерли в спальне"
+    ],
+    "payload": {
+      "text": "сработало правило №5",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_006",
+    "action": "log.write",
+    "phrases": [
+      "стол погасли у двери",
+      "настенные часы пошли"
+    ],
+    "payload": {
+      "text": "сработало правило №6",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_007",
+    "action": "beep",
+    "phrases": [
+      "певица погасли на чердаке"
+    ],
+    "payload": {
+      "frequency": 640,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_008",
+    "action": "beep",
+    "phrases": [
+      "часы закрылись у двери"
+    ],
+    "payload": {
+      "frequency": 700,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_009",
+    "action": "stats.count",
+    "phrases": [
+      "старинные часы качнулись в коридоре",
+      "старинные часы пошли"
+    ],
+    "payload": {
+      "name": "statistics-9"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_010",
+    "action": "beep",
+    "phrases": [
+      "стрелки качнулись в коридоре"
+    ],
+    "payload": {
+      "frequency": 820,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_011",
+    "action": "log.write",
+    "phrases": [
+      "стенные часы погасли в зале"
+    ],
+    "payload": {
+      "text": "сработало правило №11",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_012",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало засветились у двери",
+      "зеркало открылись"
+    ],
+    "payload": {
+      "text": "Зеркало засветились у двери",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_013",
+    "action": "stats.count",
+    "phrases": [
+      "старинные часы замолчали в зале"
+    ],
+    "payload": {
+      "name": "statistics-13"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_014",
+    "action": "log.write",
+    "phrases": [
+      "стенные часы замерли на чердаке"
+    ],
+    "payload": {
+      "text": "сработало правило №14",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_015",
+    "action": "log.write",
+    "phrases": [
+      "часы засветились у двери",
+      "стол пошли"
+    ],
+    "payload": {
+      "text": "сработало правило №15",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_016",
+    "action": "beep",
+    "phrases": [
+      "старинные часы качнулись на чердаке"
+    ],
+    "payload": {
+      "frequency": 460,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_017",
+    "action": "stats.count",
+    "phrases": [
+      "голос засветились в зале"
+    ],
+    "payload": {
+      "name": "statistics-17"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_018",
+    "action": "log.write",
+    "phrases": [
+      "голос замолчали на кухне",
+      "часы замерли"
+    ],
+    "payload": {
+      "text": "сработало правило №18",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_019",
+    "action": "caption.show",
+    "phrases": [
+      "настенные часы остановились в спальне"
+    ],
+    "payload": {
+      "text": "Настенные часы остановились в спальне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_020",
+    "action": "beep",
+    "phrases": [
+      "лампа остановились на кухне"
+    ],
+    "payload": {
+      "frequency": 700,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_021",
+    "action": "log.write",
+    "phrases": [
+      "зеркало засветились у окна",
+      "голос замолчали"
+    ],
+    "payload": {
+      "text": "сработало правило №21",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_022",
+    "action": "caption.show",
+    "phrases": [
+      "часы погасли на кухне"
+    ],
+    "payload": {
+      "text": "Часы погасли на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_023",
+    "action": "log.write",
+    "phrases": [
+      "окно пошли у окна"
+    ],
+    "payload": {
+      "text": "сработало правило №23",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_024",
+    "action": "caption.show",
+    "phrases": [
+      "голос открылись у двери",
+      "окно засветились"
+    ],
+    "payload": {
+      "text": "Голос открылись у двери",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_025",
+    "action": "caption.show",
+    "phrases": [
+      "лампа зазвучали у окна"
+    ],
+    "payload": {
+      "text": "Лампа зазвучали у окна",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_026",
+    "action": "caption.show",
+    "phrases": [
+      "дверь открылись на балконе"
+    ],
+    "payload": {
+      "text": "Дверь открылись на балконе",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_027",
+    "action": "caption.show",
+    "phrases": [
+      "старинные часы замерли на балконе",
+      "стрелки открылись"
+    ],
+    "payload": {
+      "text": "Старинные часы замерли на балконе",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_028",
+    "action": "stats.count",
+    "phrases": [
+      "часы открылись в спальне"
+    ],
+    "payload": {
+      "name": "statistics-28"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_029",
+    "action": "beep",
+    "phrases": [
+      "часы пошли на кухне"
+    ],
+    "payload": {
+      "frequency": 520,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_030",
+    "action": "log.write",
+    "phrases": [
+      "зеркало зазвучали в гостиной",
+      "картина закрылись"
+    ],
+    "payload": {
+      "text": "сработало правило №30",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_031",
+    "action": "caption.show",
+    "phrases": [
+      "штора закрылись в спальне"
+    ],
+    "payload": {
+      "text": "Штора закрылись в спальне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_032",
+    "action": "log.write",
+    "phrases": [
+      "зеркало закрылись на кухне"
+    ],
+    "payload": {
+      "text": "сработало правило №32",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_033",
+    "action": "log.write",
+    "phrases": [
+      "стрелки замерли на кухне",
+      "старинные часы засветились"
+    ],
+    "payload": {
+      "text": "сработало правило №33",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_034",
+    "action": "log.write",
+    "phrases": [
+      "настенные часы остановились на кухне"
+    ],
+    "payload": {
+      "text": "сработало правило №34",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_035",
+    "action": "beep",
+    "phrases": [
+      "часы остановились на кухне"
+    ],
+    "payload": {
+      "frequency": 880,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_036",
+    "action": "caption.show",
+    "phrases": [
+      "часы засветились на балконе",
+      "картина погасли"
+    ],
+    "payload": {
+      "text": "Часы засветились на балконе",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_037",
+    "action": "stats.count",
+    "phrases": [
+      "дверь замолчали на чердаке"
+    ],
+    "payload": {
+      "name": "statistics-37"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_038",
+    "action": "log.write",
+    "phrases": [
+      "старинные часы пошли у двери"
+    ],
+    "payload": {
+      "text": "сработало правило №38",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_039",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало замолчали в спальне",
+      "дверь остановились"
+    ],
+    "payload": {
+      "text": "Зеркало замолчали в спальне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_040",
+    "action": "caption.show",
+    "phrases": [
+      "часы пошли у окна"
+    ],
+    "payload": {
+      "text": "Часы пошли у окна",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_041",
+    "action": "caption.show",
+    "phrases": [
+      "лампа качнулись на кухне"
+    ],
+    "payload": {
+      "text": "Лампа качнулись на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_042",
+    "action": "beep",
+    "phrases": [
+      "старинные часы зазвучали в зале",
+      "старинные часы закрылись"
+    ],
+    "payload": {
+      "frequency": 580,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_043",
+    "action": "stats.count",
+    "phrases": [
+      "настенные часы погасли в зале"
+    ],
+    "payload": {
+      "name": "statistics-43"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_044",
+    "action": "stats.count",
+    "phrases": [
+      "стенные часы засветились в гостиной"
+    ],
+    "payload": {
+      "name": "statistics-44"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_045",
+    "action": "stats.count",
+    "phrases": [
+      "настенные часы остановились на чердаке",
+      "зеркало закрылись"
+    ],
+    "payload": {
+      "name": "statistics-45"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_046",
+    "action": "beep",
+    "phrases": [
+      "музыка остановились на балконе"
+    ],
+    "payload": {
+      "frequency": 820,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_047",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало остановились на кухне"
+    ],
+    "payload": {
+      "text": "Зеркало остановились на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_048",
+    "action": "beep",
+    "phrases": [
+      "стол зазвучали на балконе",
+      "зеркало замерли"
+    ],
+    "payload": {
+      "frequency": 220,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_049",
+    "action": "caption.show",
+    "phrases": [
+      "стрелки зазвучали на кухне"
+    ],
+    "payload": {
+      "text": "Стрелки зазвучали на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_050",
+    "action": "log.write",
+    "phrases": [
+      "часы закрылись у окна"
+    ],
+    "payload": {
+      "text": "сработало правило №50",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_051",
+    "action": "log.write",
+    "phrases": [
+      "стол качнулись у двери",
+      "зеркало погасли"
+    ],
+    "payload": {
+      "text": "сработало правило №51",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_052",
+    "action": "beep",
+    "phrases": [
+      "дверь засветились в спальне"
+    ],
+    "payload": {
+      "frequency": 460,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_053",
+    "action": "caption.show",
+    "phrases": [
+      "лампа пошли на кухне"
+    ],
+    "payload": {
+      "text": "Лампа пошли на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_054",
+    "action": "beep",
+    "phrases": [
+      "стол замолчали в подвале",
+      "стрелки остановились"
+    ],
+    "payload": {
+      "frequency": 580,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_055",
+    "action": "stats.count",
+    "phrases": [
+      "часы зазвучали на балконе"
+    ],
+    "payload": {
+      "name": "statistics-55"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_056",
+    "action": "beep",
+    "phrases": [
+      "певица открылись на балконе"
+    ],
+    "payload": {
+      "frequency": 700,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_057",
+    "action": "log.write",
+    "phrases": [
+      "стенные часы пошли на чердаке",
+      "окно зазвучали"
+    ],
+    "payload": {
+      "text": "сработало правило №57",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_058",
+    "action": "caption.show",
+    "phrases": [
+      "часы погасли у двери"
+    ],
+    "payload": {
+      "text": "Часы погасли у двери",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_059",
+    "action": "log.write",
+    "phrases": [
+      "музыка зазвучали на чердаке"
+    ],
+    "payload": {
+      "text": "сработало правило №59",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_060",
+    "action": "log.write",
+    "phrases": [
+      "музыка закрылись в зале",
+      "певица погасли"
+    ],
+    "payload": {
+      "text": "сработало правило №60",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_061",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало качнулись на кухне"
+    ],
+    "payload": {
+      "text": "Зеркало качнулись на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_062",
+    "action": "stats.count",
+    "phrases": [
+      "картина зазвучали в коридоре"
+    ],
+    "payload": {
+      "name": "statistics-62"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_063",
+    "action": "log.write",
+    "phrases": [
+      "окно замерли у двери",
+      "лампа замерли"
+    ],
+    "payload": {
+      "text": "сработало правило №63",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_064",
+    "action": "beep",
+    "phrases": [
+      "старинные часы пошли в подвале"
+    ],
+    "payload": {
+      "frequency": 460,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_065",
+    "action": "beep",
+    "phrases": [
+      "настенные часы остановились у двери"
+    ],
+    "payload": {
+      "frequency": 520,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_066",
+    "action": "log.write",
+    "phrases": [
+      "штора закрылись на балконе",
+      "окно погасли"
+    ],
+    "payload": {
+      "text": "сработало правило №66",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_067",
+    "action": "log.write",
+    "phrases": [
+      "часы качнулись на кухне"
+    ],
+    "payload": {
+      "text": "сработало правило №67",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_068",
+    "action": "beep",
+    "phrases": [
+      "стол качнулись в гостиной"
+    ],
+    "payload": {
+      "frequency": 700,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_069",
+    "action": "stats.count",
+    "phrases": [
+      "музыка замолчали у окна",
+      "стенные часы погасли"
+    ],
+    "payload": {
+      "name": "statistics-69"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_070",
+    "action": "beep",
+    "phrases": [
+      "песня качнулись на кухне"
+    ],
+    "payload": {
+      "frequency": 820,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_071",
+    "action": "beep",
+    "phrases": [
+      "певица замолчали у окна"
+    ],
+    "payload": {
+      "frequency": 880,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_072",
+    "action": "log.write",
+    "phrases": [
+      "зеркало остановились в гостиной",
+      "дверь качнулись"
+    ],
+    "payload": {
+      "text": "сработало правило №72",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_073",
+    "action": "log.write",
+    "phrases": [
+      "стол зазвучали на чердаке"
+    ],
+    "payload": {
+      "text": "сработало правило №73",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_074",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало замолчали у окна"
+    ],
+    "payload": {
+      "text": "Зеркало замолчали у окна",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_075",
+    "action": "log.write",
+    "phrases": [
+      "часы пошли у двери",
+      "часы погасли"
+    ],
+    "payload": {
+      "text": "сработало правило №75",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_076",
+    "action": "caption.show",
+    "phrases": [
+      "лампа замолчали у окна"
+    ],
+    "payload": {
+      "text": "Лампа замолчали у окна",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_077",
+    "action": "beep",
+    "phrases": [
+      "дверь замерли на чердаке"
+    ],
+    "payload": {
+      "frequency": 520,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_078",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало пошли на кухне",
+      "стол качнулись"
+    ],
+    "payload": {
+      "text": "Зеркало пошли на кухне",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_079",
+    "action": "stats.count",
+    "phrases": [
+      "штора засветились в коридоре"
+    ],
+    "payload": {
+      "name": "statistics-79"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_080",
+    "action": "caption.show",
+    "phrases": [
+      "стрелки пошли в подвале"
+    ],
+    "payload": {
+      "text": "Стрелки пошли в подвале",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_081",
+    "action": "beep",
+    "phrases": [
+      "зеркало остановились в подвале",
+      "зеркало зазвучали"
+    ],
+    "payload": {
+      "frequency": 760,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_082",
+    "action": "log.write",
+    "phrases": [
+      "стрелки замолчали на балконе"
+    ],
+    "payload": {
+      "text": "сработало правило №82",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_083",
+    "action": "beep",
+    "phrases": [
+      "песня качнулись в спальне"
+    ],
+    "payload": {
+      "frequency": 880,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_084",
+    "action": "stats.count",
+    "phrases": [
+      "стрелки засветились в спальне",
+      "дверь качнулись"
+    ],
+    "payload": {
+      "name": "statistics-84"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_085",
+    "action": "beep",
+    "phrases": [
+      "часы засветились на кухне"
+    ],
+    "payload": {
+      "frequency": 280,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_086",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало качнулись в подвале"
+    ],
+    "payload": {
+      "text": "Зеркало качнулись в подвале",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_087",
+    "action": "caption.show",
+    "phrases": [
+      "зеркало открылись в зале",
+      "часы погасли"
+    ],
+    "payload": {
+      "text": "Зеркало открылись в зале",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 4,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_088",
+    "action": "log.write",
+    "phrases": [
+      "часы открылись в коридоре"
+    ],
+    "payload": {
+      "text": "сработало правило №88",
+      "level": "info"
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "log",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_089",
+    "action": "stats.count",
+    "phrases": [
+      "настенные часы засветились на кухне"
+    ],
+    "payload": {
+      "name": "statistics-89"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_090",
+    "action": "beep",
+    "phrases": [
+      "певица засветились в гостиной",
+      "старинные часы остановились"
+    ],
+    "payload": {
+      "frequency": 580,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_091",
+    "action": "stats.count",
+    "phrases": [
+      "лампа остановились у двери"
+    ],
+    "payload": {
+      "name": "statistics-91"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_092",
+    "action": "caption.show",
+    "phrases": [
+      "музыка открылись на чердаке"
+    ],
+    "payload": {
+      "text": "Музыка открылись на чердаке",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_093",
+    "action": "caption.show",
+    "phrases": [
+      "стрелки зазвучали в гостиной",
+      "голос замерли"
+    ],
+    "payload": {
+      "text": "Стрелки зазвучали в гостиной",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_094",
+    "action": "stats.count",
+    "phrases": [
+      "стрелки погасли на кухне"
+    ],
+    "payload": {
+      "name": "statistics-94"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_095",
+    "action": "stats.count",
+    "phrases": [
+      "зеркало погасли на кухне"
+    ],
+    "payload": {
+      "name": "statistics-95"
+    },
+    "threshold": 0.86,
+    "cooldown": 8.0,
+    "once": false,
+    "enabled": true,
+    "priority": 0,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_096",
+    "action": "caption.show",
+    "phrases": [
+      "окно замерли в подвале",
+      "певица качнулись"
+    ],
+    "payload": {
+      "text": "Окно замерли в подвале",
+      "duration": 2.5
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 3,
+    "require_final": false,
+    "tags": [
+      "screen",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_097",
+    "action": "stats.count",
+    "phrases": [
+      "часы замолчали у двери"
+    ],
+    "payload": {
+      "name": "statistics-97"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 5,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_098",
+    "action": "beep",
+    "phrases": [
+      "штора погасли в спальне"
+    ],
+    "payload": {
+      "frequency": 340,
+      "duration": 0.08
+    },
+    "threshold": 0.86,
+    "cooldown": 4.0,
+    "once": false,
+    "enabled": true,
+    "priority": 2,
+    "require_final": false,
+    "tags": [
+      "sound",
+      "сгенерировано"
+    ]
+  },
+  {
+    "id": "auto_099",
+    "action": "stats.count",
+    "phrases": [
+      "стол замерли в коридоре",
+      "старинные часы пошли"
+    ],
+    "payload": {
+      "name": "statistics-99"
+    },
+    "threshold": 0.86,
+    "cooldown": 2.0,
+    "once": false,
+    "enabled": true,
+    "priority": 1,
+    "require_final": false,
+    "tags": [
+      "statistics",
+      "сгенерировано"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+# Переносы строк
+# В коде всегда LF — иначе на разных машинах одни и те же файлы
+# отличаются переносами и diff показывает пустые изменения.
+* text=auto eol=lf
+
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.txt   text eol=lf
+*.cfg   text eol=lf
+*.conf  text eol=lf
+
+# Двоичные файлы не трогаем
+*.png   binary
+*.jpg   binary
+*.wav   binary
+*.mp3   binary
+*.ico   binary
+
+# Модель распознавания (качается скриптом)
+assets/models/** binary

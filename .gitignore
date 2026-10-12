@@ -1,0 +1,30 @@
+# Модели распознавания (крупные файлы)
+assets/models/
+*.part
+
+# Звуковые дорожки
+assets/demo/*.wav
+*.mp3
+*.wav
+*.ogg
+*.flac
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Инструменты разработки
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Прочее
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

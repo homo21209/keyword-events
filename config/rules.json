@@ -1,0 +1,171 @@
+{
+  "rules": [
+    {
+      "id": "clock_stop",
+      "action": "clock.set",
+      "phrases": [
+        "часы остановились",
+        "часы остановили",
+        "стрелки остановились",
+        "часы встали"
+      ],
+      "payload": {
+        "running": false,
+        "caption": "А часы-то остановились!"
+      },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "priority": 10,
+      "tags": ["сценарий", "часы"]
+    },
+    {
+      "id": "clock_run",
+      "action": "clock.set",
+      "phrases": [
+        "еще идут старинные часы",
+        "идут старинные часы",
+        "старинные часы идут",
+        "часы пошли"
+      ],
+      "payload": {
+        "running": true,
+        "caption": "А часы-то пошли!"
+      },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "priority": 10,
+      "tags": ["сценарий", "часы"]
+    },
+    {
+      "id": "clock_caption_stop",
+      "action": "caption.show",
+      "phrases": ["часы остановились"],
+      "payload": {
+        "text": "А часы-то остановились!",
+        "duration": 6.0
+      },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "tags": ["сценарий"]
+    },
+    {
+      "id": "clock_caption_run",
+      "action": "caption.show",
+      "phrases": ["идут старинные часы"],
+      "payload": {
+        "text": "А часы-то пошли!",
+        "duration": 6.0
+      },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "tags": ["сценарий"]
+    },
+    {
+      "id": "scene_show_clock",
+      "action": "scene.set",
+      "phrases": ["посмотри на часы", "вот настенные часы"],
+      "payload": { "scene": "clock" },
+      "threshold": 0.85,
+      "cooldown": 8.0,
+      "tags": ["сценарий"]
+    },
+    {
+      "id": "scene_show_singer",
+      "action": "scene.set",
+      "phrases": ["певица", "она поет", "смотри на нее"],
+      "payload": { "scene": "singer" },
+      "threshold": 0.86,
+      "cooldown": 8.0,
+      "tags": ["сценарий"]
+    },
+    {
+      "id": "scene_show_both",
+      "action": "scene.set",
+      "phrases": ["картина", "на экране"],
+      "payload": { "scene": "both" },
+      "threshold": 0.9,
+      "cooldown": 10.0,
+      "tags": ["сценарий"]
+    },
+    {
+      "id": "count_stop",
+      "action": "stats.count",
+      "phrases": ["часы остановились"],
+      "payload": { "name": "остановок часов" },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "tags": ["статистика"]
+    },
+    {
+      "id": "count_run",
+      "action": "stats.count",
+      "phrases": ["идут старинные часы"],
+      "payload": { "name": "запусков часов" },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "tags": ["статистика"]
+    },
+    {
+      "id": "beep_stop",
+      "action": "beep",
+      "phrases": ["часы остановились"],
+      "payload": { "frequency": 320.0, "duration": 0.18 },
+      "threshold": 0.86,
+      "cooldown": 4.0,
+      "tags": ["звук"]
+    },
+    {
+      "id": "beep_run",
+      "action": "beep",
+      "phrases": ["идут старинные часы"],
+      "payload": { "frequency": 880.0, "duration": 0.1 },
+      "threshold": 0.86,
+      "cooldown": 4.0,
+      "tags": ["звук"]
+    },
+    {
+      "id": "note_log",
+      "action": "log.write",
+      "phrases": ["часы остановились"],
+      "payload": {
+        "text": "СТОП: стрелки часов замерли (обработчик сработал по ключевым словам)",
+        "level": "warn"
+      },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "require_final": true,
+      "tags": ["журнал"]
+    },
+    {
+      "id": "note_log_run",
+      "action": "log.write",
+      "phrases": ["идут старинные часы"],
+      "payload": {
+        "text": "ПУСК: стрелки часов снова идут",
+        "level": "info"
+      },
+      "threshold": 0.84,
+      "cooldown": 4.0,
+      "require_final": true,
+      "tags": ["журнал"]
+    },
+    {
+      "id": "media_pause",
+      "action": "media.pause",
+      "phrases": ["тишина", "замолчи", "стоп", "пауза"],
+      "threshold": 0.86,
+      "cooldown": 5.0,
+      "require_final": true,
+      "tags": ["управление"]
+    },
+    {
+      "id": "media_resume",
+      "action": "media.resume",
+      "phrases": ["продолжай", "играй дальше", "продолжить", "возобнови"],
+      "threshold": 0.86,
+      "cooldown": 5.0,
+      "require_final": true,
+      "tags": ["управление"]
+    }
+  ]
+}
